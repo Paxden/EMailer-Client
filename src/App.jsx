@@ -22,7 +22,7 @@ const Mailer = () => {
   const [isBackendHealthy, setIsBackendHealthy] = useState(false);
 
   // Backend URL - store as constant
-  const BACKEND_URL = "https://emailer-3fdh.onrender.com";
+  const BACKEND_URL = "https://emailer-07ps.onrender.com";
 
   // Check backend health on component mount
   useEffect(() => {
