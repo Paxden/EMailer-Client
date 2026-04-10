@@ -69,7 +69,7 @@ const Mailer = () => {
     setProgress({ current: 0, total: validRecipients.length });
 
     try {
-      const response = await fetch('https://e-mailer-smoky.vercel.app/api/send-emails', {
+      const response = await fetch('https://emailer-3fdh.onrender.com/api/send-emails', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -113,7 +113,7 @@ const Mailer = () => {
     if (!testEmail) return;
 
     try {
-      const response = await fetch('http://localhost:5001/api/test-connection', {
+      const response = await fetch('https://e-mailer-smoky.vercel.app/api/test-connection', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ testEmail }),
